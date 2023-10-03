@@ -1,0 +1,18 @@
+.SearchResults {
+    width: 50%;
+    height: 950px;
+    overflow-y: scroll;
+    padding: .88rem;
+    background-color: #141414;
+  }
+  
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+@media only screen and (max-width: 1020px) {
+.SearchResults {
+  width: 90%;
+  margin-bottom: 2rem;
+    }
+}
