@@ -3,6 +3,7 @@ html,
 #root {
   height: 100%;
   font-family: 'Lato', sans-serif;
+  border-color: 0px solid black;
 }
 
 html {
@@ -49,7 +50,14 @@ h2 {
   width: 100%;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 520px) {
+  .App {
+    background-image: url('./bg-spoti-mob.jpg');
+    background-size: 200vw;
+    background-position:top;
+    background-repeat: repeat; 
+
+  }
   .App-playlist {
     align-items: center;
     flex-direction: column;
