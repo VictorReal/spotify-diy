@@ -4,6 +4,7 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
+import Footer from '../Footer/Footer'
 
 import Spotify from '../../util/Spotify';
 
@@ -64,10 +65,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Spotify
+        <header>Spotify
           <span className="highlight"> DIY</span>
           <span className="writtenName"> The Playlist</span>
-        </h1>
+        </header>
         <div className="App">
           <SearchBar onSearch={this.search} />
           <div className="App-playlist">
@@ -79,7 +80,8 @@ class App extends React.Component {
                       onNameChange={this.updatePlaylistName}
                       onSave={this.savePlaylist} />
           </div>
-        </div>      
+        </div>    
+        <Footer />  
       </div>
     )
   }

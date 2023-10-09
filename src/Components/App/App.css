@@ -10,19 +10,20 @@ html {
   font-size: 18px;
 }
 
-h1 {
+header {
   padding: .77rem 0;
   background-color: #141414;
+  border: 1px solid #141414;
   text-align: center;
   font-size: 2rem;
   color: #ffffff;
 }
 
-h1 .highlight {
+header .highlight {
   color: #1db954;
 }
 
-h1 .writtenName {
+header .writtenName {
   font-family: 'Dancing Script', cursive;
   font-size: 1.7rem;
 }
@@ -50,13 +51,12 @@ h2 {
   width: 100%;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 1020px) {
   .App {
     background-image: url('./bg-spoti-mob.jpg');
     background-size: 200vw;
     background-position:top;
     background-repeat: repeat; 
-
   }
   .App-playlist {
     align-items: center;
